@@ -1,5 +1,6 @@
 $primary-color: rgb(107, 107, 107);
 $secondary-color: #eece1a;
+@import './mixins.scss';
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
