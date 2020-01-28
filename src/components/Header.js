@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/Header.scss';
 
 class Header extends Component {
@@ -43,24 +44,24 @@ class Header extends Component {
           </div>
           <ul className="menu-nav">
             <li className="nav-item current">
-              <a href="home.html" className="nav-link">
+              <Link to="/" className="nav-link">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="about.html" className="nav-link">
-                About Me
-              </a>
+              <Link to="/about" className="nav-link">
+                About me
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="work.html" className="nav-link">
+              <Link to="/work" className="nav-link">
                 My Work
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="contact.html" className="nav-link">
-                Contact Me
-              </a>
+              <Link to="/contact" className="nav-link">
+                Contact me
+              </Link>
             </li>
           </ul>
         </nav>

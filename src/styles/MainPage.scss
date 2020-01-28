@@ -1,6 +1,4 @@
 @import './mixins-and-variables.scss';
-$primary-color: rgb(107, 107, 107);
-$secondary-color: #eece1a;
 
 h1,
 h2,
@@ -72,6 +70,10 @@ h3 {
       margin-top: 1rem;
       padding: 0;
     }
+
+    .icons {
+      text-align: left;
+    }
   }
 }
 
@@ -90,6 +92,10 @@ h3 {
     .sm-heading {
       text-align: left;
       font-size: 2rem;
+    }
+
+    .icons {
+      text-align: left;
     }
   }
 }
