@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.scss';
 
 class Header extends Component {
-  state = { showMenu: false };
-  toggleMenu = () => {
+  state = { showMenu: false, currentPage: 'home' };
+
+  toggleMenu = page => {
     const menuBtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.menu');
     const menuNav = document.querySelector('.menu-nav');
@@ -26,9 +27,10 @@ class Header extends Component {
       menuBranding.classList.remove('show');
       navItems.forEach(item => item.classList.remove('show'));
 
-      this.setState({ showMenu: false });
+      this.setState({ currentPage: page, showMenu: false });
     }
   };
+
   render() {
     return (
       <header>
@@ -43,22 +45,34 @@ class Header extends Component {
             <div className="portrait"></div>
           </div>
           <ul className="menu-nav">
-            <li className="nav-item current">
+            <li
+              onClick={() => this.toggleMenu('home')}
+              className={'nav-item ' + (this.state.currentPage === 'home' ? 'current' : '')}
+            >
               <Link to="/" className="nav-link">
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              onClick={() => this.toggleMenu('about')}
+              className={'nav-item ' + (this.state.currentPage === 'about' ? 'current' : '')}
+            >
               <Link to="/about" className="nav-link">
                 About me
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              onClick={() => this.toggleMenu('work')}
+              className={'nav-item ' + (this.state.currentPage === 'work' ? 'current' : '')}
+            >
               <Link to="/work" className="nav-link">
                 My Work
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              onClick={() => this.toggleMenu('contact')}
+              className={'nav-item ' + (this.state.currentPage === 'contact' ? 'current' : '')}
+            >
               <Link to="/contact" className="nav-link">
                 Contact me
               </Link>

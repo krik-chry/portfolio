@@ -17,11 +17,20 @@
   .text-secondary {
     color: $secondary-color;
   }
+
+  .bio-text {
+    line-height: 1.2;
+    font-size: 1.2rem;
+  }
+
+  .stack-icon {
+    margin: 0 1.2%;
+  }
 }
 
 .bio-image {
-  width: 50vh;
-  height: 50vh;
+  width: 40vh;
+  height: 40vh;
   background: url('../assets/portrait.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,23 +43,22 @@
   grid-gap: 30px;
   grid-template-areas:
     'bioimage bio bio'
-    'job1 job2 job3';
+    'stack stack stack'
+    'job2 job2 job3';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
   }
-
-  .job-1 {
-    grid-area: job1;
+  .stack {
+    text-align: center;
+    grid-area: stack;
   }
 
   .job-2 {
@@ -62,9 +70,11 @@
   }
 
   .job {
+    border-radius: 20px;
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $secondary-color 15px solid;
+    border-right: $secondary-color 15px solid;
   }
 }
 

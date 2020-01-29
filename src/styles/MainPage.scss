@@ -21,7 +21,7 @@ h3 {
   color: $secondary-color;
 }
 
-.main-page {
+#main-page {
   padding: 4rem;
   height: 100%;
   overflow: hidden;
@@ -54,7 +54,7 @@ h3 {
 
 // Different screen sizes
 @include mediaSm {
-  .main-page {
+  #main-page {
     padding: 2rem;
     margin-top: 5vh;
 
@@ -78,7 +78,7 @@ h3 {
 }
 
 @include mediaMd {
-  .main-page {
+  #main-page {
     align-items: center;
     text-align: center;
 

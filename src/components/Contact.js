@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { FaGithub, FaLinkedin, FaFacebookF, FaPhone, FaLocationArrow } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
-import Header from './Header';
 import '../styles/Contact.scss';
 
 class Contact extends Component {
   render() {
     return (
       <>
-        <Header />
         <div id="contact-page">
           <h1 className="lg-heading">
             Contact<span className="text-secondary">Me</span>

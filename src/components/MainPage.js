@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 import '../styles/MainPage.scss';
-import Header from './Header';
 
 class MainPage extends Component {
   render() {
     return (
       <>
-        <Header />
-        <div className="main-page">
+        <div id="main-page">
           <h1 className="lg-heading">
             <span className="text-secondary">Chrisostomos</span> Krikonis
           </h1>
