@@ -16,6 +16,31 @@
 
   .item {
     grid-area: 'item';
+
+    h3 {
+      padding: 0.5rem 1rem;
+      color: #fff;
+      text-align: center;
+      margin-top: 0.3rem;
+      background-color: lighten($primary-color, $amount: 10);
+      border-radius: 20px;
+    }
+    .project-desc {
+      color: #fff;
+      margin-top: 0.3rem;
+      padding: 0.5rem 1rem;
+      background-color: $secondary-color;
+      border-radius: 20px;
+
+      .desc-section {
+        border-radius: 20px;
+        text-align: center;
+        background-color: $primary-color;
+        color: #fff;
+        margin: 0.5rem;
+        padding: 0.2rem;
+      }
+    }
   }
 
   img {
@@ -35,53 +60,42 @@
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
+  border-radius: 20px;
   margin: 0 auto;
-  width: 30%;
   text-align: center;
   align-items: center;
   text-decoration: none;
-
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-  }
 }
 
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
+  &:hover {
+    background: $secondary-color;
+  }
 }
 
 .btn-light {
   @extend .btn;
   background: lighten($primary-color, 50);
   color: #333;
+  &:hover {
+    background: $secondary-color;
+    color: #fff;
+  }
 }
 
-@include mediaSm {
+@include mediaLg {
   #work-page {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
   }
 
   .projects {
-    grid-template-areas:
-      'item'
-      'item'
-      'item'
-      'item';
-    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 4rem;
 
     img {
       height: 15rem;
-      &:hover {
-        transform: none;
-      }
-    }
-
-    .btn {
-      padding: 0.2rem;
-      margin-top: 0.3rem;
     }
   }
 }
@@ -89,32 +103,23 @@
 @include mediaMd {
   #work-page {
     padding: 2rem 1rem;
-  }
-  .projects {
-    grid-gap: 2rem;
-    img {
-      height: 15rem;
-      &:hover {
-        transform: none;
+
+    .projects {
+      grid-gap: 2rem;
+      grid-template-areas:
+        'item'
+        'item'
+        'item'
+        'item';
+      grid-template-columns: repeat(1, 1fr);
+
+      img {
+        height: 50%;
+        margin: 0 auto;
+        &:hover {
+          transform: none;
+        }
       }
-    }
-
-    .btn {
-      width: 60%;
-      padding: 0.2rem;
-      margin-top: 0.3rem;
-    }
-  }
-}
-
-@include mediaLg {
-  #work-page {
-    padding: 2rem 1rem;
-  }
-  .projects {
-    grid-gap: 4rem;
-    img {
-      height: 15rem;
     }
   }
 }

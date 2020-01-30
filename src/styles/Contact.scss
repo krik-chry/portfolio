@@ -15,7 +15,7 @@
   }
 }
 .boxes {
-  padding: 2rem 2rem;
+  // padding: 2rem 2rem;
   display: grid;
   grid-gap: 3rem;
   grid-template-areas:
@@ -33,6 +33,8 @@
     border: 3px #fff solid;
     background-color: lighten($primary-color, 10);
     font-size: 2.2rem;
+    box-shadow: 10px 10px $secondary-color;
+    border-radius: 20px;
     @include easeOut;
 
     a {
@@ -55,12 +57,24 @@
   }
 }
 
-@include mediaSm {
+@include mediaLg {
   #contact-page {
-    padding: 3rem 0.5rem;
+    padding: 2rem 2rem;
+  }
+
+  .boxes {
+    grid-gap: 1rem;
+    .box {
+      padding: 0.5rem 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+@include mediaMd {
+  #contact-page {
+    padding: 2rem 1rem;
   }
   .boxes {
-    padding: 1rem 0.5rem;
     grid-gap: 2rem;
     grid-template-areas:
       'box'
@@ -79,5 +93,15 @@
       padding: 0.5rem 1rem;
       font-size: 1.5rem;
     }
+  }
+}
+
+@include mediaSm {
+  #contact-page {
+    padding: 3rem 0.5rem;
+  }
+
+  .box {
+    font-size: 1rem;
   }
 }

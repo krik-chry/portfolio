@@ -16,15 +16,10 @@ class About extends Component {
             <div className="bio">
               <h3 className="text-secondary">BIO</h3>
               <p className="bio-text">
-                After working in business industry for years, the magical world of coding inspired
-                me to turn into a Web Developer. Always motivated to learn more, up for new
-                challenges, eager to grow personally and professionaly. <br></br>
-                <br></br> - Successfully Graduated from the Codaisseur Academy Full-Stack
-                Development Bootcamp. <br></br>
-                <br></br> - Experience with the latest software development technologies. <br></br>
-                <br></br>- Collaborated and delivered products in teams using Agile (SCRUM)
-                methodology.<br></br>
-                <br></br> I am ready to make magic happen, currently looking for my first job as a
+                After working in business industry for years, the world of coding inspired me to
+                turn into a Web Developer. Always motivated to learn more, up for new challenges,
+                eager to grow personally and professionaly. <br></br>
+                <br></br>I am ready to make magic happen, currently looking for my first job as a
                 developer, and people to share my passion for coding with.
               </p>
             </div>
@@ -105,22 +100,40 @@ class About extends Component {
               </div>
             </div>
 
-            <div className="job job-2">
-              <h3>Designers ABC</h3>
-              <h6>Front End Developer</h6>
+            <div className="job job-1">
+              <h3>Full-Stack Web Developer, Codaisseur Academy Graduate</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis
-                totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.
+                <a href="https://codaisseur.com/become-a-developer">
+                  Codaisseur's Academy Bootcamp
+                </a>{' '}
+                is an intensive and challenging 3-month course, where only 35% of applicants are
+                accepted and 70% of the students are graduating. During the course, I :<br></br>
+                <ul>
+                  <li>Discovered that I can solve any problem</li>
+                  <li>Proved that I am a fast learning, easy-to-adapt, autonomous developer</li>
+                  <li>Excelled in ALL code reviews and quality assessments</li>
+                  <li>Improved and added new features in an existing codebase</li>
+                  <li>
+                    Collaborated in teams, using Agile (SCRUM) methodologies and delivered quality
+                    products
+                  </li>
+                  <li>Created a front-end web-app with a technology not taught, in only 3 days</li>
+                </ul>
               </p>
             </div>
 
-            <div className="job job-3">
-              <h3>Webworks</h3>
-              <h6>Graphic Designer</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perferendis
-                totam enim. Nesciunt porro dolores expedita dolor necessitatibus deserunt nemo.
+            <div className="job job-2">
+              <p id="quote">
+                "Chrisostomos is a talented engineer who is the definition of a great teammate. I
+                taught Chrisostomos at Codaisseur, where he was at the top of his class technically
+                and consistently excelled in real-world development opportunities. Chrisostomos'
+                background and intense devotion to hard work shone through in his ability to
+                engineer meaningful products to high standards quickly. Chrisostomos made the people
+                he worked with better by delivering quality code, insightful architecture, and a
+                highly professional demeanor. Chrisostomos is fully capable of being a substantially
+                contributing developer in any modern development team.""
               </p>
+              <h5 id="quote-author">David Stephenson, JavaScript Teacher at Codaisseur</h5>
             </div>
           </div>
         </div>
