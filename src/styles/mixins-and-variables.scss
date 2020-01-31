@@ -3,7 +3,7 @@ $secondary-color: #0a274e;
 $show-home-image: true;
 $home-image: url(../assets/background.jpg);
 $mobile-image: url(./assets/mobile-background.jpg);
-$background-opacity: 0.9;
+$background-opacity: 0.8;
 
 @mixin background {
   @if $show-home-image {

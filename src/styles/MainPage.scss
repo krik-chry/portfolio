@@ -34,25 +34,21 @@ h3 {
     a {
       padding: 0.8rem;
       text-decoration: none;
+      &#fb-icon,
+      &#gh-icon,
+      &#lin-icon,
+      &#phone-icon,
+      &#mail-icon {
+        color: darken($secondary-color, 5);
+      }
 
-      &.fb-icon {
-        color: #3b5998;
-      }
-      &.gh-icon {
-        color: black;
-      }
-      &.lin-icon {
-        color: #2867b2;
-      }
-      &:hover {
-        color: white;
+      :hover {
+        color: #fff;
         @include easeOut();
       }
     }
   }
 }
-
-// Different screen sizes
 
 @include mediaMd {
   #main-page {

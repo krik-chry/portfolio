@@ -15,7 +15,6 @@
   }
 }
 .boxes {
-  // padding: 2rem 2rem;
   display: grid;
   grid-gap: 3rem;
   grid-template-areas:
@@ -46,12 +45,13 @@
     &:hover {
       padding: 2 rem 2rem;
       background: darken($primary-color, 30);
+      transform: scale(1.05);
+      @include easeOut;
       a {
         color: #fff;
       }
-      color: white;
       span {
-        color: set-text-color($secondary-color);
+        color: lighten($secondary-color, 20);
       }
     }
   }
@@ -70,9 +70,17 @@
     }
   }
 }
+
 @include mediaMd {
   #contact-page {
     padding: 2rem 1rem;
+
+    h1 {
+      &.lg-heading {
+        font-size: 3rem;
+        margin-top: 2rem;
+      }
+    }
   }
   .boxes {
     grid-gap: 2rem;
@@ -91,16 +99,12 @@
     }
     .box {
       padding: 0.5rem 1rem;
-      font-size: 1.5rem;
+      width: 90%;
     }
   }
 }
 
 @include mediaSm {
-  #contact-page {
-    padding: 3rem 0.5rem;
-  }
-
   .box {
     font-size: 1rem;
   }

@@ -51,7 +51,7 @@ header {
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.25);
   }
 
   100% {
@@ -65,7 +65,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.95;
+  opacity: 0.98;
   visibility: hidden;
 
   &.show {
@@ -152,7 +152,7 @@ header {
 
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
-    transition-delay: $x * 0.15s;
+    transition-delay: $x * 0.1s;
   }
 }
 

@@ -1,7 +1,7 @@
 @import './mixins-and-variables.scss';
 
 #about-page {
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   height: 100%;
   h1,
   h2,
@@ -117,20 +117,14 @@
   }
 }
 
-// @include mediaSm {
-//   #about-page {
-//     padding: 2rem 2rem;
-//     height: 100%;
-//     .about-info {
-//       grid-template-areas:
-//         'bioimage'
-//         'bio'
-//         'stack'
-//         'job-1'
-//         'job-2';
-
-//       grid-template-columns: 1fr;
-
-//     }
-//   }
-// }
+@include mediaSm {
+  #about-page {
+    p {
+      font-size: 0.9rem;
+    }
+    ul {
+      font-size: 1rem;
+      margin-left: -15px;
+    }
+  }
+}

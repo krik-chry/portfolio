@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaPhoneSquare } from 'react-icons/fa';
+import { MdMail } from 'react-icons/md';
 import '../styles/MainPage.scss';
 import { Link } from 'react-router-dom';
 
@@ -40,7 +41,7 @@ class MainPage extends Component {
           </h1>
           <h2 className="sm-heading">Junior Full-Stack Web Developer</h2>
           <div>
-            <ul className="main-menu-nav">
+            {/* <ul className="main-menu-nav">
               <li
                 onClick={() => this.toggleMenu('home')}
                 className={'nav-item ' + (this.state.currentPage === 'home' ? 'current' : '')}
@@ -73,17 +74,23 @@ class MainPage extends Component {
                   Contact me
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="icons">
-            <a className="fb-icon" href="https://www.facebook.com/xrisostomos.krikonis">
-              <FaFacebook size="3rem" />
-            </a>
-            <a className="gh-icon" href="https://github.com/krik-chry/">
+            <a id="gh-icon" href="https://github.com/krik-chry/">
               <FaGithub size="3rem" />
             </a>
-            <a className="lin-icon" href="https://www.linkedin.com/in/xrisostomos-krikonis/">
+            <a id="lin-icon" href="https://www.linkedin.com/in/xrisostomos-krikonis/">
               <FaLinkedin size="3rem" />
+            </a>
+            <a id="mail-icon" href="mailto:krikonis.chr@gmail.com">
+              <MdMail size="3rem" />
+            </a>
+            <a id="fb-icon" href="https://www.facebook.com/xrisostomos.krikonis">
+              <FaFacebook size="3rem" />
+            </a>
+            <a id="phone-icon" href="tel:+306984377089">
+              <FaPhoneSquare size="3rem" />
             </a>
           </div>
         </div>

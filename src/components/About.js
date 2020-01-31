@@ -25,12 +25,11 @@ class About extends Component {
             </div>
 
             <div className="job stack">
-              <h2 className="text-secondary">MY STACK</h2>
               <div className="stack-icons">
                 <img
                   className="stack-icon"
-                  src="https://img.icons8.com/color/60/000000/typescript.png"
-                  alt="ts"
+                  src="https://img.icons8.com/color/60/000000/javascript.png"
+                  alt="js"
                 />
                 <img
                   className="stack-icon"
@@ -39,23 +38,13 @@ class About extends Component {
                 />
                 <img
                   className="stack-icon"
-                  src="https://img.icons8.com/color/60/000000/graphql.png"
-                  alt="graphql"
-                />
-                <img
-                  className="stack-icon"
-                  src="https://img.icons8.com/color/60/000000/redux.png"
-                  alt="redux"
-                />
-                <img
-                  className="stack-icon"
                   src="https://img.icons8.com/color/60/000000/nodejs.png"
                   alt="nodejs"
                 />
                 <img
                   className="stack-icon"
-                  src="https://img.icons8.com/color/60/000000/javascript.png"
-                  alt="js"
+                  src="https://img.icons8.com/color/60/000000/git.png"
+                  alt="git"
                 />
                 <img
                   className="stack-icon"
@@ -69,6 +58,21 @@ class About extends Component {
                 />
                 <img
                   className="stack-icon"
+                  src="https://img.icons8.com/color/60/000000/redux.png"
+                  alt="redux"
+                />
+                <img
+                  className="stack-icon"
+                  src="https://img.icons8.com/color/60/000000/typescript.png"
+                  alt="ts"
+                />
+                <img
+                  className="stack-icon"
+                  src="https://img.icons8.com/color/60/000000/graphql.png"
+                  alt="graphql"
+                />
+                <img
+                  className="stack-icon"
                   src="https://img.icons8.com/color/60/000000/postgreesql.png"
                   alt="postgresql"
                 />
@@ -79,8 +83,8 @@ class About extends Component {
                 />
                 <img
                   className="stack-icon"
-                  src="https://img.icons8.com/color/60/000000/git.png"
-                  alt="git"
+                  src="https://img.icons8.com/color/60/000000/vue-js.png"
+                  alt="vue"
                 />
                 <img
                   className="stack-icon"
@@ -92,11 +96,6 @@ class About extends Component {
                   src="https://img.icons8.com/color/60/000000/slack-new.png"
                   alt="slack"
                 />
-                <img
-                  className="stack-icon"
-                  src="https://img.icons8.com/color/60/000000/vue-js.png"
-                  alt="vue"
-                ></img>
               </div>
             </div>
 
@@ -109,8 +108,8 @@ class About extends Component {
                 is an intensive and challenging 3-month course, where only 35% of applicants are
                 accepted and 70% of the students are graduating. During the course, I :<br></br>
                 <ul>
-                  <li>Discovered that I can solve any problem</li>
-                  <li>Proved that I am a fast learning, easy-to-adapt, autonomous developer</li>
+                  <li>Proved that I am a fast-learning, easy-to-adapt, autonomous developer</li>
+                  <li>Grew confindence that I can solve any problem</li>
                   <li>Excelled in ALL code reviews and quality assessments</li>
                   <li>Improved and added new features in an existing codebase</li>
                   <li>

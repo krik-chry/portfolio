@@ -18,8 +18,10 @@ class Contact extends Component {
             </a>
           </div>
           <div className="box">
-            <FaLocationArrow size="2rem" />
-            <span className="text-secondary">Location: </span> Amsterdam, The Netherlands
+            <a href="">
+              <FaLocationArrow size="2rem" />
+              <span className="text-secondary">Location: </span> Amsterdam, The Netherlands
+            </a>
           </div>
           <div className="box">
             <a href="mailto:krikonis.chr@gmail.com">
