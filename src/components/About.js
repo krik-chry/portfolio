@@ -17,10 +17,12 @@ class About extends Component {
               <h3 className="text-secondary">BIO</h3>
               <p className="bio-text">
                 After working in business industry for years, the world of coding inspired me to
-                turn into a Web Developer. Always motivated to learn more, up for new challenges,
-                eager to grow personally and professionaly. <br></br>
-                <br></br>I am ready to make magic happen, currently looking for my first job as a
-                developer, and people to share my passion for coding with.
+                turn into a Web Developer. As a junior developer in the beggining of my career, I am
+                always up for new challenges and motivated to expand my knowledge and grow
+                personally and professionaly. <br></br>
+                <br></br>I am currently looking for my first job as a developer and people to share
+                my passion for coding with, but I am confident that I am ready to{' '}
+                <span>MAKE MAGIC HAPPEN.</span>
               </p>
             </div>
 
