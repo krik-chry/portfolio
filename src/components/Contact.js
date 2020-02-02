@@ -12,14 +12,14 @@ class Contact extends Component {
         </h1>
         <div className="boxes">
           <div className="box">
-            <FaPhone className="contact-icon" />
             <a href="tel:+306984377089">
+              <FaPhone className="contact-icon" />
               <span className="text-secondary">Phone: </span> +306984377089
             </a>
           </div>
           <div className="box">
-            <FaLocationArrow className="contact-icon" />
-            <a href="">
+            <a href="https://goo.gl/maps/FicBriLJVFn3634k8">
+              <FaLocationArrow className="contact-icon" />
               <span className="text-secondary">Location: </span> Amsterdam, NL
             </a>
           </div>
@@ -30,22 +30,22 @@ class Contact extends Component {
             </a>
           </div>
           <div className="box">
-            <FaLinkedin className="contact-icon" />
             <a href="https://www.linkedin.com/in/krikonis-chr/">
+              <FaLinkedin className="contact-icon" />
               <span className="text-secondary">LinkedIn: </span>
               linkedin.com/in/krikonis-chr
             </a>
           </div>
           <div className="box">
-            <FaGithub className="contact-icon" />
             <a href="https://github.com/krik-chry/">
+              <FaGithub className="contact-icon" />
               <span className="text-secondary">Github: </span>
               krik-chry
             </a>
           </div>
           <div className="box">
-            <FaFacebookF className="contact-icon" />
             <a href="https://www.facebook.com/xrisostomos.krikonis">
+              <FaFacebookF className="contact-icon" />
               <span className="text-secondary">Facebook: </span>
               Xrisostomos Krikonis
             </a>

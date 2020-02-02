@@ -22,12 +22,18 @@
 
     &.lg-heading {
       font-size: 4.5rem;
+      color: $tertiary-color;
+
+      .text-secondary {
+        color: $quinary-color;
+      }
     }
   }
 
   .contact-icon {
     width: 2.5rem;
     height: 2.5rem;
+    color: $primary-color;
   }
 
   .boxes {
@@ -46,11 +52,11 @@
 
     .box {
       padding: 1.5rem 2.5rem;
-      border: 3px #fff solid;
-      background-color: lighten($primary-color, 10);
       font-size: 2.2rem;
-      box-shadow: 10px 10px $secondary-color;
+      border: 3px $quinary-color solid;
       border-radius: 20px;
+      background-color: $quaternary-color;
+      box-shadow: 10px 10px $tertiary-color;
       @include easeOut;
 
       a {
@@ -61,16 +67,18 @@
 
       &:hover {
         padding: 2 rem 2rem;
-        background: darken($primary-color, 30);
+        background: darken($secondary-color, 40);
         transform: scale(1.05);
         @include easeOut;
 
         a {
-          color: #fff;
+          color: $tertiary-color;
         }
-
+        .contact-icon {
+          color: $quinary-color;
+        }
         span {
-          color: lighten($secondary-color, 20);
+          color: $secondary-color;
         }
       }
     }
