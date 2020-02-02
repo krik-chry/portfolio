@@ -22,11 +22,12 @@
 
     &.lg-heading {
       font-size: 4.5rem;
+      color: $quinary-color;
     }
   }
 
   .text-secondary {
-    color: $secondary-color;
+    color: $tertiary-color;
   }
 
   .bio-text {
@@ -59,7 +60,7 @@
     background: url('../assets/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border: solid 3px $secondary-color;
+    border: solid 3px $quinary-color;
     border-radius: 50%;
   }
 
@@ -80,6 +81,11 @@
     .bio {
       grid-area: bio;
       font-size: 1.5rem;
+      border: 3px #fff solid;
+      border-radius: 20px;
+      background: $secondary-color;
+      padding: 1rem;
+      box-shadow: 10px 10px $tertiary-color;
     }
 
     .stack {
@@ -98,13 +104,13 @@
     .job {
       border: 3px #fff solid;
       border-radius: 20px;
-      background: lighten($primary-color, 5);
+      background: $secondary-color;
       padding: 1rem;
-      box-shadow: 10px 10px $secondary-color;
+      box-shadow: 10px 10px $tertiary-color;
 
       a {
         text-decoration: underline;
-        color: rgb(129, 27, 27);
+        color: $quinary-color;
       }
     }
   }

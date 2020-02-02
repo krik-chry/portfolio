@@ -9,12 +9,14 @@ h3 {
   &.lg-heading {
     font-size: 4.5rem;
     line-height: 1.2;
+    color: $tertiary-color;
   }
 
   &.sm-heading {
     font-size: 2.5rem;
     padding: 0.2rem 1rem;
-    background: darken($primary-color, 5);
+    background: $quinary-color;
+    color: darken($primary-color, 20);
   }
 }
 
@@ -42,11 +44,11 @@ h3 {
       &#lin-icon,
       &#phone-icon,
       &#mail-icon {
-        color: darken($secondary-color, 5);
+        color: darken($primary-color, 25);
       }
 
       :hover {
-        color: #fff;
+        color: $quaternary-color;
         @include easeOut();
       }
     }
