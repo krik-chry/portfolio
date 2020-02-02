@@ -1,101 +1,110 @@
 @import './mixins-and-variables.scss';
 
 #work-page {
+  &:after {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($primary-color, 1);
+  }
+
   padding: 2rem 8rem;
-  height: 100%;
-}
 
-.projects {
-  margin-top: 3.5rem;
-  display: grid;
-  grid-gap: 5rem;
-  grid-template-areas:
-    'item item'
-    'item item';
-  grid-template-columns: repeat(2, 1fr);
+  .projects {
+    margin-top: 3.5rem;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-areas:
+      'item item'
+      'item item';
+    grid-template-columns: repeat(2, 1fr);
 
-  .item {
-    grid-area: 'item';
+    .item {
+      grid-area: 'item';
 
-    h3 {
-      padding: 0.5rem 1rem;
-      color: #fff;
-      text-align: center;
-      margin-top: 0.3rem;
-      background-color: lighten($primary-color, $amount: 10);
-      border-radius: 20px;
-    }
-    .project-desc {
-      color: #fff;
-      margin-top: 0.3rem;
-      padding: 0.5rem 1rem;
-      background-color: $secondary-color;
-      border-radius: 20px;
-
-      .desc-section {
-        border-radius: 20px;
-        text-align: center;
-        background-color: $primary-color;
+      h3 {
+        padding: 0.5rem 1rem;
         color: #fff;
-        margin: 0.5rem;
-        padding: 0.2rem;
+        text-align: center;
+        margin-top: 0.3rem;
+        background-color: lighten($primary-color, $amount: 10);
+        border-radius: 20px;
+      }
+      .project-desc {
+        color: #fff;
+        margin-top: 0.3rem;
+        padding: 0.5rem 1rem;
+        background-color: $secondary-color;
+        border-radius: 20px;
+
+        .desc-section {
+          border-radius: 20px;
+          text-align: center;
+          background-color: $primary-color;
+          color: #fff;
+          margin: 0.5rem;
+          padding: 0.2rem;
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 25rem;
+      border: 3px #fff solid;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.3);
+        overflow: hidden;
+        border-color: $secondary-color;
       }
     }
   }
 
-  img {
-    width: 100%;
-    height: 25rem;
-    border: 3px #fff solid;
-    transition: transform 0.2s;
+  .btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
     &:hover {
-      transform: scale(1.3);
-      overflow: hidden;
-      border-color: $secondary-color;
+      background: $secondary-color;
+    }
+  }
+
+  .btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
+    &:hover {
+      background: $secondary-color;
+      color: #fff;
     }
   }
 }
-
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  border-radius: 20px;
-  margin: 0 auto;
-  text-align: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
-  &:hover {
-    background: $secondary-color;
-  }
-}
-
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #333;
-  &:hover {
-    background: $secondary-color;
-    color: #fff;
-  }
-}
-
 @include mediaLg {
   #work-page {
     padding: 2rem 2rem;
-  }
 
-  .projects {
-    grid-gap: 4rem;
+    .projects {
+      grid-gap: 4rem;
 
-    img {
-      height: 15rem;
+      img {
+        height: 15rem;
+      }
     }
   }
 }

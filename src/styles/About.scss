@@ -1,8 +1,19 @@
 @import './mixins-and-variables.scss';
 
 #about-page {
+  &:after {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($primary-color, 1);
+  }
+
   padding: 2rem 4rem;
-  height: 100%;
+
   h1,
   h2,
   h3 {
@@ -38,63 +49,62 @@
   #quote-author {
     text-align: right;
   }
-}
-
-.bio-image {
-  width: 35vh;
-  height: 35vh;
-  background: url('../assets/portrait.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  border: solid 3px $secondary-color;
-}
-
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    'bioimage bio bio'
-    'stack stack stack'
-    'job-1 job-1 job-2';
-  grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
-    grid-area: bioimage;
-    margin: auto;
+    width: 35vh;
+    height: 35vh;
+    background: url('../assets/portrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: solid 3px $secondary-color;
   }
 
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-  .stack {
-    text-align: center;
-    grid-area: stack;
-  }
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+      'bioimage bio bio'
+      'stack stack stack'
+      'job-1 job-1 job-2';
+    grid-template-columns: repeat(3, 1fr);
 
-  .job-1 {
-    grid-area: job-1;
-  }
+    .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+    }
 
-  .job-2 {
-    grid-area: job-2;
-  }
+    .bio {
+      grid-area: bio;
+      font-size: 1.5rem;
+    }
+    .stack {
+      text-align: center;
+      grid-area: stack;
+    }
 
-  .job {
-    border: 3px #fff solid;
-    border-radius: 20px;
-    background: lighten($primary-color, 5);
-    padding: 1rem;
-    box-shadow: 10px 10px $secondary-color;
+    .job-1 {
+      grid-area: job-1;
+    }
 
-    a {
-      text-decoration: underline;
-      color: rgb(129, 27, 27);
+    .job-2 {
+      grid-area: job-2;
+    }
+
+    .job {
+      border: 3px #fff solid;
+      border-radius: 20px;
+      background: lighten($primary-color, 5);
+      padding: 1rem;
+      box-shadow: 10px 10px $secondary-color;
+
+      a {
+        text-decoration: underline;
+        color: rgb(129, 27, 27);
+      }
     }
   }
 }
-
 @include mediaMd {
   #about-page {
     padding: 2rem 2rem;

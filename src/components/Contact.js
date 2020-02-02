@@ -20,7 +20,7 @@ class Contact extends Component {
           <div className="box">
             <a href="">
               <FaLocationArrow size="2rem" />
-              <span className="text-secondary">Location: </span> Amsterdam, The Netherlands
+              <span className="text-secondary">Location: </span> Amsterdam, NL
             </a>
           </div>
           <div className="box">

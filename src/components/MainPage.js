@@ -40,42 +40,7 @@ class MainPage extends Component {
             <span className="text-secondary">Chrisostomos</span> Krikonis
           </h1>
           <h2 className="sm-heading">Junior Full-Stack Web Developer</h2>
-          <div>
-            {/* <ul className="main-menu-nav">
-              <li
-                onClick={() => this.toggleMenu('home')}
-                className={'nav-item ' + (this.state.currentPage === 'home' ? 'current' : '')}
-              >
-                <Link to="/" className="nav-link-button">
-                  Home
-                </Link>
-              </li>
-              <li
-                onClick={() => this.toggleMenu('about')}
-                className={'nav-item ' + (this.state.currentPage === 'about' ? 'current' : '')}
-              >
-                <Link to="/about" className="nav-link-button">
-                  About me
-                </Link>
-              </li>
-              <li
-                onClick={() => this.toggleMenu('work')}
-                className={'nav-item ' + (this.state.currentPage === 'work' ? 'current' : '')}
-              >
-                <Link to="/work" className="nav-link-button">
-                  My Work
-                </Link>
-              </li>
-              <li
-                onClick={() => this.toggleMenu('contact')}
-                className={'nav-item ' + (this.state.currentPage === 'contact' ? 'current' : '')}
-              >
-                <Link to="/contact" className="nav-link-button">
-                  Contact me
-                </Link>
-              </li>
-            </ul> */}
-          </div>
+
           <div className="icons">
             <a id="gh-icon" href="https://github.com/krik-chry/">
               <FaGithub size="3rem" />

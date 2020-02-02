@@ -1,16 +1,19 @@
-$primary-color: rgb(84, 85, 88);
-$secondary-color: #0a274e;
+$primary-color: #393f4d;
+$secondary-color: #d4d4dc;
+$tertiary-color: #fdce42;
+$quaternary-color: #1d1e22;
 $show-home-image: true;
 $home-image: url(../assets/background.jpg);
 $mobile-image: url(./assets/mobile-background.jpg);
-$background-opacity: 0.8;
+$background-opacity: 0.6;
 
 @mixin background {
   @if $show-home-image {
-    background: $home-image;
-    background-attachment: fixed;
+    background: $home-image no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
 
     &:after {
       content: '';

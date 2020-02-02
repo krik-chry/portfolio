@@ -14,8 +14,8 @@ header {
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 40px;
+  top: 40px;
   cursor: pointer;
   animation: pulse 2s infinite;
   @include easeOut;
@@ -24,7 +24,7 @@ header {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: $quaternary-color;
     @include easeOut;
   }
 
@@ -51,7 +51,7 @@ header {
   }
 
   50% {
-    transform: scale(1.25);
+    transform: scale(1.5);
   }
 
   100% {
@@ -118,7 +118,7 @@ header {
   }
 
   .nav-item {
-    // outline: none;
+    outline: none;
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
@@ -127,7 +127,7 @@ header {
     }
 
     &.current > a {
-      color: $secondary-color;
+      color: $tertiary-color;
     }
   }
 
