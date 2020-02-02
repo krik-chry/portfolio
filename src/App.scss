@@ -15,6 +15,7 @@ body {
 
 @include mediaMd {
   body {
+    @include background();
     background: $mobile-image no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
