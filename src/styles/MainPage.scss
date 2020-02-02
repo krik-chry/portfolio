@@ -23,6 +23,9 @@ h3 {
 }
 
 #main-page {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
   padding: 4rem;
   height: 100%;
   overflow: hidden;
