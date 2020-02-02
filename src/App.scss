@@ -6,26 +6,10 @@
 
 body {
   @include background();
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: $primary-color;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
-}
-
-@include mediaMd {
-  body {
-    background-image: $mobile-image;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646;
-    // background: $mobile-image no-repeat center center fixed;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-  }
 }
