@@ -23,6 +23,10 @@
     }
   }
 
+  .contact-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
   .boxes {
     display: grid;
     grid-gap: 3rem;
@@ -77,6 +81,12 @@
         margin-top: 2rem;
       }
     }
+
+    .contact-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+
     .boxes {
       grid-gap: 2rem;
       grid-template-areas:
@@ -88,6 +98,7 @@
         'box';
       grid-template-columns: repeat(1, 1fr);
       margin-top: 1rem;
+
       .box {
         padding: 0.5rem 1rem;
         width: 90%;
@@ -104,6 +115,11 @@
   #contact-page {
     padding: 2rem 1rem;
 
+    .contact-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
     .boxes {
       grid-gap: 1.5rem;
       grid-template-areas:
@@ -119,6 +135,10 @@
         padding: 0.5rem 0.5rem;
         width: 100%;
         font-size: 1rem;
+
+        .text-secondary {
+          margin-left: 0.5rem;
+        }
       }
     }
   }

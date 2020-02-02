@@ -65,7 +65,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.98;
   visibility: hidden;
 
   &.show {
@@ -87,7 +86,7 @@ header {
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: $primary-color;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -98,7 +97,8 @@ header {
   }
 
   &-branding {
-    background: $primary-color;
+    background: darken($primary-color, 10);
+
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
