@@ -52,16 +52,6 @@ h3 {
     }
   }
 }
-footer {
-  padding-right: 5px;
-  font-size: 15px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: right;
-  background: darken($primary-color, 10);
-  height: 25px;
-}
 
 @include mediaMd {
   #main-page {
