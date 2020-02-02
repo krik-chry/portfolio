@@ -59,6 +59,7 @@ class MainPage extends Component {
             </a>
           </div>
         </div>
+        <footer>Copyright &copy; 2020</footer>
       </>
     );
   }
