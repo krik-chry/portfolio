@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaPhoneSquare } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
 import '../styles/MainPage.scss';
-import { Link } from 'react-router-dom';
 
 class MainPage extends Component {
   state = { showMenu: false, currentPage: 'home' };

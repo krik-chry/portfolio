@@ -37,14 +37,14 @@ class Work extends Component {
               <div className="btn-light">
                 <FaExternalLinkAlt size="1rem" /> Not Available Demo
               </div>
-              <div className="btn-dark">
-                <FaGithub size="1rem" /> Not Available
-              </div>
+              <a href="https://github.com/krik-chry/w8-final-client" className="btn-dark">
+                <FaGithub size="1rem" /> Github
+              </a>
               <div className="project-desc">
                 <p class="desc-section">About</p> Full-Stack WebApp for finding, buying or selling
                 tickets online for upcoming events. Final Individual Assignment Project (5 days) for
-                Codaisseur Academy Bootcamp. Github repo or live version are not available due to
-                Academy restrictions, but I would be happy to make a live demonstration. <br></br>
+                Codaisseur Academy Bootcamp. Demo is not available due to Academy restrictions, but
+                I would be happy to make a live demonstration. <br></br>
                 <p class="desc-section">Features</p> Signup, Login, Add Event, Filter finished
                 events, Add Ticket, Edit Ticket, Algorithm that calculates the Risk of buying a
                 specific ticket.
@@ -64,7 +64,7 @@ class Work extends Component {
               </a>
               <div className="project-desc">
                 <p class="desc-section">About</p> Full-Stack Multiplayer Rock-Paper-Scissors game,
-                built by a team of two, in 4 days with minimal guidance. You will proably not find
+                built by a team of two, in 4 days with minimal guidance. You will probably not find
                 an opponent to play in the demo, so here you can see a gameplay gif.
                 <br></br>
                 <p class="desc-section">Features</p> Signup, Login, Streaming technology to keep
