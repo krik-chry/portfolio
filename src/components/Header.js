@@ -5,7 +5,7 @@ import '../styles/Header.scss';
 class Header extends Component {
   state = { showMenu: false, currentPage: 'home' };
 
-  toggleMenu = page => {
+  toggleMenu = () => {
     const menuBtn = document.querySelector('.menu-btn');
     const menu = document.querySelector('.menu');
     const menuNav = document.querySelector('.menu-nav');
@@ -27,8 +27,13 @@ class Header extends Component {
       menuBranding.classList.remove('show');
       navItems.forEach(item => item.classList.remove('show'));
 
-      this.setState({ currentPage: page, showMenu: false });
+      this.setState({ showMenu: false });
     }
+  };
+
+  navToPage = page => {
+    this.setState({ currentPage: page, showMenu: false });
+    this.toggleMenu();
   };
 
   render() {
@@ -46,7 +51,7 @@ class Header extends Component {
           </div>
           <ul className="menu-nav">
             <li
-              onClick={() => this.toggleMenu('home')}
+              onClick={() => this.navToPage('home')}
               className={'nav-item ' + (this.state.currentPage === 'home' ? 'current' : '')}
             >
               <Link to="/" className="nav-link">
@@ -54,7 +59,7 @@ class Header extends Component {
               </Link>
             </li>
             <li
-              onClick={() => this.toggleMenu('about')}
+              onClick={() => this.navToPage('about')}
               className={'nav-item ' + (this.state.currentPage === 'about' ? 'current' : '')}
             >
               <Link to="/about" className="nav-link">
@@ -62,7 +67,7 @@ class Header extends Component {
               </Link>
             </li>
             <li
-              onClick={() => this.toggleMenu('work')}
+              onClick={() => this.navToPage('work')}
               className={'nav-item ' + (this.state.currentPage === 'work' ? 'current' : '')}
             >
               <Link to="/work" className="nav-link">
@@ -70,7 +75,7 @@ class Header extends Component {
               </Link>
             </li>
             <li
-              onClick={() => this.toggleMenu('contact')}
+              onClick={() => this.navToPage('contact')}
               className={'nav-item ' + (this.state.currentPage === 'contact' ? 'current' : '')}
             >
               <Link to="/contact" className="nav-link">
