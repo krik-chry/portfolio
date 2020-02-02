@@ -43,19 +43,19 @@ class MainPage extends Component {
 
           <div className="icons">
             <a id="gh-icon" href="https://github.com/krik-chry/">
-              <FaGithub size="3rem" />
+              <FaGithub className="main-page-icon" />
             </a>
             <a id="lin-icon" href="https://www.linkedin.com/in/xrisostomos-krikonis/">
-              <FaLinkedin size="3rem" />
+              <FaLinkedin className="main-page-icon" />
             </a>
             <a id="mail-icon" href="mailto:krikonis.chr@gmail.com">
-              <MdMail size="3rem" />
+              <MdMail className="main-page-icon" />
             </a>
             <a id="fb-icon" href="https://www.facebook.com/xrisostomos.krikonis">
-              <FaFacebook size="3rem" />
+              <FaFacebook className="main-page-icon" />
             </a>
             <a id="phone-icon" href="tel:+306984377089">
-              <FaPhoneSquare size="3rem" />
+              <FaPhoneSquare className="main-page-icon" />
             </a>
           </div>
         </div>

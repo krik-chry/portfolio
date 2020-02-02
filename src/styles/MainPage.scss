@@ -21,7 +21,6 @@ h3 {
 .text-secondary {
   color: $secondary-color;
 }
-
 #main-page {
   padding: 4rem;
   height: 100%;
@@ -50,6 +49,11 @@ h3 {
         @include easeOut();
       }
     }
+
+    .main-page-icon {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 
@@ -72,6 +76,11 @@ h3 {
 
     .icons {
       text-align: left;
+
+      .main-page-icon {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
 }
@@ -90,6 +99,13 @@ h3 {
       font-size: 1.5rem;
       margin-top: 1rem;
       padding: 0;
+    }
+
+    .icons {
+      .main-page-icon {
+        width: 2rem;
+        height: 2rem;
+      }
     }
   }
 }
