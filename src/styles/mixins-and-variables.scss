@@ -13,7 +13,7 @@ $background-opacity: 0.6;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100%;
+
     &:after {
       content: '';
       position: fixed;
@@ -25,6 +25,7 @@ $background-opacity: 0.6;
       background: rgba($primary-color, $background-opacity);
     }
   }
+
   background: $home-image no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
