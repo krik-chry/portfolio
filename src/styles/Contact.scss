@@ -1,6 +1,8 @@
 @import './mixins-and-variables.scss';
 
 #contact-page {
+  padding: 2rem 4rem;
+
   &:after {
     content: '';
     position: fixed;
@@ -11,7 +13,7 @@
     height: 100%;
     background: rgba($primary-color, 1);
   }
-  padding: 2rem 4rem;
+
   h1,
   h2,
   h3 {
@@ -27,6 +29,7 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+
   .boxes {
     display: grid;
     grid-gap: 3rem;
@@ -40,6 +43,7 @@
     .text-secondary {
       margin-left: 1rem;
     }
+
     .box {
       padding: 1.5rem 2.5rem;
       border: 3px #fff solid;
@@ -60,9 +64,11 @@
         background: darken($primary-color, 30);
         transform: scale(1.05);
         @include easeOut;
+
         a {
           color: #fff;
         }
+
         span {
           color: lighten($secondary-color, 20);
         }
@@ -103,6 +109,7 @@
         padding: 0.5rem 1rem;
         width: 90%;
         font-size: 2rem;
+
         .text-secondary {
           margin-left: 1rem;
         }
@@ -131,6 +138,7 @@
         'box';
       grid-template-columns: repeat(1, 1fr);
       margin-top: 1rem;
+
       .box {
         padding: 0.5rem 0.5rem;
         width: 100%;

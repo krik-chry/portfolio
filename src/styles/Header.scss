@@ -59,8 +59,6 @@ header {
   }
 }
 
-//Menu overlay
-
 .menu {
   position: fixed;
   top: 0;
@@ -148,15 +146,12 @@ header {
   }
 }
 
-//Delay nav-item slide
-
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
 }
 
-// Medium screen sizes
 @include mediaMd {
   ul.menu-nav,
   div.menu-branding {

@@ -1,6 +1,8 @@
 @import './mixins-and-variables.scss';
 
 #about-page {
+  padding: 2rem 4rem;
+
   &:after {
     content: '';
     position: fixed;
@@ -11,8 +13,6 @@
     height: 100%;
     background: rgba($primary-color, 1);
   }
-
-  padding: 2rem 4rem;
 
   h1,
   h2,
@@ -38,14 +38,17 @@
   .stack-icon {
     margin: 0 1.2%;
   }
+
   ul {
     margin-left: 20px;
     font-size: 1.2rem;
   }
+
   #quote {
     font-size: 1rem;
     font-style: italic;
   }
+
   #quote-author {
     text-align: right;
   }
@@ -56,8 +59,8 @@
     background: url('../assets/portrait.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 50%;
     border: solid 3px $secondary-color;
+    border-radius: 50%;
   }
 
   .about-info {
@@ -78,6 +81,7 @@
       grid-area: bio;
       font-size: 1.5rem;
     }
+
     .stack {
       text-align: center;
       grid-area: stack;
@@ -109,6 +113,7 @@
   #about-page {
     padding: 2rem 2rem;
     height: 100%;
+
     .about-info {
       grid-template-areas:
         'bioimage'
@@ -132,6 +137,7 @@
     p {
       font-size: 0.9rem;
     }
+
     ul {
       font-size: 1rem;
       margin-left: -15px;
