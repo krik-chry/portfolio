@@ -142,5 +142,9 @@
         'item';
       grid-template-columns: repeat(1, 1fr);
     }
+
+    img {
+      height: 15rem;
+    }
   }
 }
