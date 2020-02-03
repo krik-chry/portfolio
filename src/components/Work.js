@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import '../styles/Work.scss';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Work extends Component {
   render() {
@@ -12,7 +14,9 @@ class Work extends Component {
           </h1>
           <div className="projects">
             <div className="item">
-              <img src={require('../assets/time-travel.gif')} alt="time-travel" />
+              <div className="image">
+                <img src={require('../assets/time-travel.gif')} alt="time-travel" />
+              </div>
               <h3>A JOURNEY THROUGH TIME</h3>
               <a href="https://time-travel-app.herokuapp.com/" className="btn-light">
                 <FaExternalLinkAlt size="1rem" /> Live Demo
@@ -32,7 +36,22 @@ class Work extends Component {
               </div>
             </div>
             <div className="item">
-              <img src={require('../assets/ticketfinder.png')} alt="ticketfinder-project" />
+              <div className="screenshot">
+                <Carousel showThumbs={false} showStatus={false}>
+                  <div>
+                    <img src={require('../assets/ticketfinder1.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/ticketfinder2.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/ticketfinder3.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/ticketfinder4.png')} alt="ticketfinder-project" />
+                  </div>
+                </Carousel>
+              </div>
               <h3>TICKETFINDER</h3>
               <div className="btn-light">
                 <FaExternalLinkAlt size="1rem" /> Not Available Demo
@@ -54,7 +73,34 @@ class Work extends Component {
               </div>
             </div>
             <div className="item">
-              <img src={require('../assets/rock-paper-scissors.gif')} alt="rps-game" />
+              <div className="image">
+                <img src={require('../assets/sw-heightometer.png')} alt="sw-height" />
+              </div>
+              <h3>STAR WARS HEIGHT-O-METER</h3>
+              <a href="https://star-wars-heightometer.netlify.com/" className="btn-light">
+                <FaExternalLinkAlt size="1rem" /> Live Demo
+              </a>
+              <a
+                href="https://github.com/krik-chry/star-wars-assignment-client"
+                className="btn-dark"
+              >
+                <FaGithub size="1rem" /> Github
+              </a>
+              <div className="project-desc">
+                <p class="desc-section">About</p> Full Stack app that gets Star Wars characters by
+                swapi.co API and sorts them by height. Technical interview assignment, completed in
+                4 days. <br></br>
+                <p class="desc-section">Features</p> Get Characters by Star Wars Episode, Search
+                film by title term, Sort characters by height (ascending/descending)
+                <br></br>
+                <p class="desc-section">Technologies</p> React, Redux, Redux-Thunk, Superagent,
+                CSS3, NodeJS, ExpressJS, Axios
+              </div>
+            </div>
+            <div className="item">
+              <div className="image">
+                <img src={require('../assets/rock-paper-scissors.gif')} alt="rps-game" />
+              </div>
               <h3>ROCK-PAPER-SCISSORS</h3>
               <a href="https://still-beyond-94898.herokuapp.com/" className="btn-light">
                 <FaExternalLinkAlt size="1rem" /> Live Demo
@@ -75,7 +121,28 @@ class Work extends Component {
               </div>
             </div>
             <div className="item">
-              <img src={require('../assets/project-calendar.png')} alt="calendar" />
+              <div className="screenshot">
+                <Carousel showThumbs={false} showStatus={false}>
+                  <div>
+                    <img src={require('../assets/calendar1.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/calendar2.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/calendar3.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/calendar4.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/calendar5.png')} alt="ticketfinder-project" />
+                  </div>
+                  <div>
+                    <img src={require('../assets/calendar6.png')} alt="ticketfinder-project" />
+                  </div>
+                </Carousel>
+              </div>{' '}
               <h3>CODAISSEUR ACADEMY CALENDAR</h3>
               <div className="btn-light">Not Available Demo</div>
               <a
