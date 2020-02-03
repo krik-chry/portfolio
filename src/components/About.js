@@ -132,7 +132,7 @@ class About extends Component {
                 engineer meaningful products to high standards quickly. Chrisostomos made the people
                 he worked with better by delivering quality code, insightful architecture, and a
                 highly professional demeanor. Chrisostomos is fully capable of being a substantially
-                contributing developer in any modern development team.""
+                contributing developer in any modern development team."
               </p>
               <h5 id="quote-author">David Stephenson, JavaScript Teacher at Codaisseur</h5>
             </div>
