@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaPhoneSquare } from 'react-icons/fa';
 import { MdMail } from 'react-icons/md';
 import '../styles/MainPage.scss';
+import myCV from '../assets/Krikonis-Chrisostomos-CV.pdf';
 
 class MainPage extends Component {
   state = { showMenu: false, currentPage: 'home' };
@@ -41,7 +42,7 @@ class MainPage extends Component {
           <h2 className="sm-heading">Junior Full-Stack Web Developer</h2>
 
           <div className="icons">
-            <a href="https://pdfhost.io/v/4BKXqtDd_KrikChrCV.pdf" className="icon">
+            <a href={myCV} className="icon" target="_blank" rel="noopener noreferrer">
               <img id="cv-icon" alt="cv" src={require('../assets/cv-icon.png')} />
             </a>
             <a className="icon" href="https://github.com/krik-chry/">
