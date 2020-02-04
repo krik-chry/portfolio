@@ -13,6 +13,7 @@ h3 {
   }
 
   &.sm-heading {
+    border-radius: 15px;
     font-size: 2.5rem;
     padding: 0.2rem 1rem;
     background: $quinary-color;
@@ -118,7 +119,7 @@ h3 {
     .sm-heading {
       font-size: 1.5rem;
       margin-top: 1rem;
-      padding: 0;
+      padding: 0.5rem;
     }
 
     .icons {

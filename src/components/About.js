@@ -85,6 +85,11 @@ class About extends Component {
                 />
                 <img
                   className="stack-icon"
+                  src="https://img.icons8.com/color/60/000000/sass.png"
+                  alt="sass"
+                />
+                <img
+                  className="stack-icon"
                   src="https://img.icons8.com/color/60/000000/vue-js.png"
                   alt="vue"
                 />
