@@ -41,19 +41,22 @@ class MainPage extends Component {
           <h2 className="sm-heading">Junior Full-Stack Web Developer</h2>
 
           <div className="icons">
-            <a id="gh-icon" href="https://github.com/krik-chry/">
+            <a href="https://pdfhost.io/v/4BKXqtDd_KrikChrCV.pdf" className="icon">
+              <img id="cv-icon" alt="cv" src={require('../assets/cv-icon.png')} />
+            </a>
+            <a className="icon" href="https://github.com/krik-chry/">
               <FaGithub className="main-page-icon" />
             </a>
-            <a id="lin-icon" href="https://www.linkedin.com/in/xrisostomos-krikonis/">
+            <a className="icon" href="https://www.linkedin.com/in/xrisostomos-krikonis/">
               <FaLinkedin className="main-page-icon" />
             </a>
-            <a id="mail-icon" href="mailto:krikonis.chr@gmail.com">
+            <a className="icon" href="mailto:krikonis.chr@gmail.com">
               <MdMail className="main-page-icon" />
             </a>
-            <a id="fb-icon" href="https://www.facebook.com/xrisostomos.krikonis">
+            <a className="icon" href="https://www.facebook.com/xrisostomos.krikonis">
               <FaFacebook className="main-page-icon" />
             </a>
-            <a id="phone-icon" href="tel:+306984377089">
+            <a className="icon" href="tel:+306984377089">
               <FaPhoneSquare className="main-page-icon" />
             </a>
           </div>
