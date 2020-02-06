@@ -14,7 +14,6 @@ class About extends Component {
             <div className="bio-image"></div>
 
             <div className="bio">
-              <h3 className="text-secondary">BIO</h3>
               <p className="bio-text">
                 After working in business industry for years, the world of coding inspired me to
                 turn into a Web Developer. As a junior developer in the beggining of my career, I am

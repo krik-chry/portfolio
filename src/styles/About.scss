@@ -1,7 +1,7 @@
 @import './mixins-and-variables.scss';
 
 #about-page {
-  padding: 2rem 4rem;
+  padding: 2rem 6rem;
 
   &:after {
     content: '';
@@ -33,7 +33,6 @@
   .bio-text {
     line-height: 1.5;
     font-size: 1.5rem;
-    text-align: justify;
 
     span {
       color: $tertiary-color;
@@ -124,7 +123,7 @@
 
 @include mediaMd {
   #about-page {
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     height: 100%;
 
     .about-info {

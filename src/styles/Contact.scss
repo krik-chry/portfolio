@@ -1,7 +1,7 @@
 @import './mixins-and-variables.scss';
 
 #contact-page {
-  padding: 2rem 4rem;
+  padding: 2rem 6rem;
 
   &:after {
     content: '';
@@ -52,7 +52,7 @@
 
     .box {
       padding: 1.5rem 2.5rem;
-      font-size: 2.2rem;
+      font-size: 2rem;
       border: 3px $quinary-color solid;
       border-radius: 20px;
       background-color: $quaternary-color;
@@ -67,18 +67,18 @@
 
       &:hover {
         padding: 2 rem 2rem;
-        background: darken($secondary-color, 40);
+        background: darken($secondary-color, 20);
         transform: scale(1.05);
         @include easeOut;
 
         a {
-          color: $tertiary-color;
+          color: lighten($secondary-color, 5);
         }
         .contact-icon {
-          color: $quinary-color;
+          color: lighten($quinary-color, 2);
         }
         span {
-          color: $secondary-color;
+          color: $tertiary-color;
         }
       }
     }
@@ -116,7 +116,7 @@
       .box {
         padding: 0.5rem 1rem;
         width: 90%;
-        font-size: 2rem;
+        font-size: 1.6rem;
 
         .text-secondary {
           margin-left: 1rem;
@@ -131,8 +131,8 @@
     padding: 2rem 1rem;
 
     .contact-icon {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2rem;
+      height: 2rem;
     }
 
     .boxes {
