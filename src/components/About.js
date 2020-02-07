@@ -107,7 +107,7 @@ class About extends Component {
 
             <div className="job job-1">
               <h3>Full-Stack Web Developer, Codaisseur Academy Graduate</h3>
-              <p>
+              <div>
                 <a href="https://codaisseur.com/become-a-developer">
                   Codaisseur's Academy Bootcamp
                 </a>{' '}
@@ -124,7 +124,7 @@ class About extends Component {
                   </li>
                   <li>Created a front-end web-app with a technology not taught, in only 3 days</li>
                 </ul>
-              </p>
+              </div>
             </div>
 
             <div className="job job-2">
